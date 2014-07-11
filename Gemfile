@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 gem 'rspec-rails', '2.13.1'
 gem 'capybara', '2.1.0'
 
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
