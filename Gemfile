@@ -7,6 +7,9 @@ gem "less-rails"
 gem "twitter-bootstrap-rails"
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+gem 'cucumber-rails', '1.4.0', :require => false
+gem 'database_cleaner', github: 'bmabey/database_cleaner'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
