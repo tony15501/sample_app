@@ -21,7 +21,8 @@ gem 'database_cleaner', github: 'bmabey/database_cleaner'
 gem 'rails', '4.0.0'
 
 # Use postgresql as the database for Active Record
-#gem 'pg'
+gem 'pg'
+gem 'rails_12factor', '0.0.2'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
