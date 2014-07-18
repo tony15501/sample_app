@@ -7,6 +7,7 @@ $grayMediumLight: #eaeaea;
 $grayLight: #999999;
 $grayMediumLight: #eaeaea;
 
+
 @mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -157,6 +158,38 @@ aside {
       border: 0;
       padding-top: 0;
     }
+
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayMediumLight;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $grayMediumLight;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
+
+
     span {
       display: block;
       margin-bottom: 3px;

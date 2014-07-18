@@ -26,6 +26,10 @@ class User < ActiveRecord::Base
     Micropost.where("user_id = ?", id)
   end
 
+  def feed
+    Micropost.from_users_followed_by(self)
+  end
+
 
   def User.digest(token)
     Digest::SHA1.hexdigest(token.to_s)

@@ -1,9 +1,15 @@
 SampleApp::Application.routes.draw do
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   get "microposts/create"
   get "microposts/destroy"
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
-  resources :microposts, only: [:create, :destroy]
+  resources :sessions,      only: [:new, :create, :destroy]
+  resources :microposts,    only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
   match '/signout',   to: 'sessions#destroy',  via:'delete'
   match '/signin',  to: 'sessions#new',         via: 'get'
   get "users/new"
